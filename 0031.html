@@ -1,85 +1,96 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página</title>
+    <title>Document</title>
+    
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
+        body{
+            margin: 0;
+            padding: 0;
         }
-
-        header {
-            background-image: url(01.jpeg);
-            text-align: center;
-            background-color: #0e0c0c;
-            border-color: aqua;
+        nav{
+            border: 30px solid color(srgb red 30px green 3opx blue);
+            text-shadow: rgb(7, 37, 7);
+            
+        }
+          ul:hover{
+            color:red;
+          }
+          head{
             padding: 30px;
-            border: 12px;
-        
-        }
-
-        nav {
+          }
+          h1{
+            padding: 20px 30px;
+            justify-content: center;
+            margin-right: 20px;
+            text-shadow: rgb(7, 37, 7) 5px 5px 10px;
+            font-size: 100px;
+            transition: 0.05s;
             text-align: center;
-            margin-top: 10px;
-            background-color: rgb(25, 29, 29);
-            border: 0.5px;
-            border-width: 1px;
-        }
+          }
+         a h1 :hover{
+            color: blue;
+          }
+          form {
+            width: 250px;px;px;
+            height: 150px;px;
+            position: left;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            border-color: brown;
+            
+            
 
-        nav a {
-            text-decoration: none;
-            padding: 5px 10px;
-            margin: 0 5px;
-            color: #911919;
-            border-radius: 3px;
-            background-color: #0e0c0c;
-        }
+          }
 
-        section {
-            margin-top: 20px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #f2f2f2;
-        }
     </style>
 </head>
-<body>
-
+<div>
     <header>
-        <h1>Mi Primera Página HTML</h1>
+        
+         <div>
+            
+            <form  class="login-box">
+                <label for="user-name"></label>
+                <input type="text" placeholder="Enter user-name">
+                <label for="password" ></label>
+                <input type="password" placeholder="enter password">
+                <input type="submit" value="log in">
+                <a href=" http://google.come">forgat_your_password</a>
+            </form>
+        </div>
     </header>
-
+</div>
+<body>
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#acerca">Acerca de Nosotros</a>
-        <a href="#contacto">Contacto</a>
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
     </nav>
+    <h1>Well come</h1>
+    <div>
+        <main>
+            <form class="row">
+            
+                <col><td> this is one</td>
+                <td>this is dos</td>
+                <td>this is tree</td>
 
-    <section id="inicio">
-        <h2>Bienvenido a mi página</h2>
-        <p>Esta es una página de ejemplo. Puedes editar este contenido para adaptarlo a tus necesidades.</p>
-    </section>
-
-    <section id="acerca">
-        <h2>Acerca de Nosotros</h2>
-        <p>Somos una empresa dedicada a...</p>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarnos a través de...</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Mi Empresa</p>
-    </footer>
-
+            </form>
+        </main>
+    </div>
 </body>
 </html>
