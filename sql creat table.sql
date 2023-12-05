@@ -74,3 +74,35 @@ insert into employee (nif, salary, id_company) values
 ('22334', 234.13 , 22);
 
 
+///////////////
+-- para junter dos tble utlisamos esta forma.
+
+use sakila;
+select * from customer;
+select * from address;
+-- frist_name, email ,address, district
+select * from customer 
+join address on customer.address_id = address.address_id;
+select first_name, email, address, district
+ from customer join address on customer.address_id = address.address_id;
+ select c.first_name, c.email,  a.address, a.district
+  from customer c join address on c.address-id = a.Address_id;
+
+  /////////////////////////////////
+   -- 2 join customer con address y city en un misma select
+  
+  select cu.email, a.address, ci. city
+  from customer cu
+  join address a on cu.address_id = a.address_id
+  join city ci on a.city_id = ci.city_id;
+
+
+
+  /////////////////////////
+  -- 2 join customer con address y city en un misma select
+  
+  select cu.email, a.address, ci. city
+  from customer cu
+  join address a on cu.address_id = a.address_id
+  join city ci on a.city_id = ci.city_id
+  join country co on ci.country_id = co.country_id;
